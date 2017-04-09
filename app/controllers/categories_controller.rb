@@ -61,10 +61,26 @@ class CategoriesController < ApplicationController
   # POST /categories
   # POST /categories.json
   def premade
-    premade1 = Category.create(userid: current_user.id, name: t('categories.index.premade1_name'), description: t('categories.index.premade1_description'))
-    premade2 = Category.create(userid: current_user.id, name: t('categories.index.premade2_name'), description: t('categories.index.premade2_description'))
-    premade3 = Category.create(userid: current_user.id, name: t('categories.index.premade3_name'), description: t('categories.index.premade3_description'))
-    premade4 = Category.create(userid: current_user.id, name: t('categories.index.premade4_name'), description: t('categories.index.premade4_description'))
+    premade1 = Category.create(
+      userid: current_user.id,
+      name: t('categories.index.premade1_name'),
+      description: t('categories.index.premade1_description')
+    )
+    premade2 = Category.create(
+      userid: current_user.id,
+      name: t('categories.index.premade2_name'),
+      description: t('categories.index.premade2_description')
+    )
+    premade3 = Category.create(
+      userid: current_user.id,
+      name: t('categories.index.premade3_name'),
+      description: t('categories.index.premade3_description')
+    )
+    premade4 = Category.create(
+      userid: current_user.id,
+      name: t('categories.index.premade4_name'),
+      description: t('categories.index.premade4_description')
+    )
 
     respond_to do |format|
       format.html { redirect_to categories_path }

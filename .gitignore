@@ -22,6 +22,7 @@
 # Ignore application configuration
 /config/env/test.env
 /config/env/development.env
+/config/application.yml
 
 # Ignore all IDE, TextEditor configuration files
 .idea/
